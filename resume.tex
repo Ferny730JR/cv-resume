@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{bookmark}
+\input{glyphtounicode}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+
+%----------FONT OPTIONS----------
+\usepackage{times}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize} \setlength\itemsep{0em}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\nobibliography{publications.bib}
+\bibliographystyle{unsrt}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Francisco Fernando Cavazos} \\ \vspace{1pt}
+    \small 915-330-5169 $|$ \href{mailto:x@x.com}{\underline{ffcavazos@miners.utep.edu}} $|$ 
+    \href{https://linkedin.com/in/francisco-cavazos}{\underline{in/francisco-cavazos}} $|$
+    \href{https://github.com/Ferny730JR}{\underline{github.com/Ferny730JR}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+    \resumeSubheading{University of Texas at El Paso}{El Paso, TX}{Bachelor of Science in Computer Science, Minor in Mathematics}{Anticipated: December 2025}
+        
+    \resumeItemListStart
+        \resumeItem{Honors \& Awards: Anheuser-Busch Charitable Trust Scholarship, Hispanic Scholarship Fund Scholar, Dean's List}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Jan. 2024 -- Present}
+      {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{Performed computational data analysis of high-throughput sequencing data}
+        \resumeItem{Generated data figures through excel and R studio}
+        \resumeItem{Collaborated with other lab members to assist in their research projects, and performed individual research}
+        \resumeItem{Developed programs for RNA analysis, including sequence discovery (motifs/IREs) and structural preference (RNA folding)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Researcher}{June 2023 -- Aug. 2023}
+      {Texas A\&M University}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Researched the use of reinforcement learning on autonomous vehicles}
+        \resumeItem{Developed a method of learning in real time in a real-world environment}
+        \resumeItem{Collaborated with graduate students and professor to write a paper and present a poster on my research}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{KATSS - K-mer Analysis Tools for Sequence and Structure} $|$ \emph{C, CMake, Unix, Bash}}
+{Jan. 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed a suite of tools for analyzing RNA-binding protein (RBP) interactions using RNA sequence and structure}
+    \resumeItem{Analyzed over 5 proteins, including: RBFOX2, UNK, MSI1 \& MSI2, discovering structural motif preference}
+    \resumeItem{Created algorithms and pipeline for motif discovery, base-pair probability preference, and sequence clustering}
+    \resumeItem{Implemented efficient data structures to improve performance, being able to analyze 10 million sequences in 15 seconds}
+    \resumeItem{Used CMake to make program compatible with Unix/Linux, MacOS, and Windows systems}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Gomoku GUI Application \& AI} $|$ \emph{Java, Swing, JUnit}}{Sept. 2023 - Dec. 2023}
+  \resumeItemListStart
+    \resumeItem{Created GUI application for the Gomoku board game using Java Swing}
+    \resumeItem{Implemented over 70 tests using JUnit, achieving 100\% code coverage across 5 classes and 46 functions}
+    \resumeItem{Developed an AI player using min-max algorithms, determined the best move from searching a depth of 20 moves}
+    \resumeItem{Used multithreading to allow for responsive GUI program, allowing several components to run simultaneously}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Autonomous Vehicle Navigation using Real-Time Reinforcement Learning} $|$ \emph{Python, PyTorch}}{June 2023 -- Aug. 2023}
+    \resumeItemListStart
+        \resumeItem{Developed real-time reinforcement learning (RL) model for autonomous vehicle navigation on a pre-mapped 2D plane}
+        \resumeItem{Implemented reduced-information training to boost training efficiency and decision-making in real-world scenarios}
+        \resumeItem{Continuous improvement in model performance over 85 training episodes, with the reward function increasing steadily}
+        \resumeItem{Authored a paper detailing the project's methodology and results, showcasing the developed RL model}
+    \resumeItemListEnd
+    
+\resumeProjectHeading
+{\textbf{ASPIIRE} $|$ \emph{Linux, Bash, awk, R}}{Sept. 2022 -- May 2023}
+    \resumeItemListStart
+        \resumeItem{Developed a program for the detection of specific RNA sequences and structures (IREs) in a given gene}
+        \resumeItem{Efficient algorithms for detection, computing through multiple 100MB files (entire human CDS and UTRs) in under 1 minute}
+        \resumeItem{Program works across different genomes, and successfully identified known over 300 IREs}
+        \resumeItem{Results from this work are being prepared for publication}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-------------
+\section{Publications}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small \item \bibentry{Harris2024Understanding}
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: Java, Python, C/C++, JavaScript, R, Bash, awk} \\
+        \textbf{Developer Tools}{: Git, Unix, JUnit, VS Code, PyCharm, IntelliJ} \\
+        \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

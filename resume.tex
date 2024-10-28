@@ -74,14 +74,14 @@
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
@@ -106,10 +106,10 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Francisco Fernando Cavazos} \\ \vspace{1pt}
-    \small 915-330-5169 $|$ \href{mailto:x@x.com}{\underline{ffcavazos@miners.utep.edu}} $|$ 
-    \href{https://linkedin.com/in/francisco-cavazos}{\underline{in/francisco-cavazos}} $|$
-    \href{https://github.com/Ferny730JR}{\underline{github.com/Ferny730JR}}
+  \textbf{\Huge \scshape Francisco Fernando Cavazos} \\ \vspace{1pt}
+  \small 915-330-5169 $|$ \href{mailto:ffcavazos@miners.utep.edu}{\underline{ffcavazos@miners.utep.edu}} $|$ 
+  \href{https://linkedin.com/in/francisco-cavazos}{\underline{in/francisco-cavazos}} $|$
+  \href{https://github.com/Ferny730JR}{\underline{github.com/Ferny730JR}}
 \end{center}
 
 
@@ -127,27 +127,28 @@
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-    \resumeSubHeadingListStart
-    
-    \resumeSubheading
-      {Undergraduate Research Assistant}{Jan. 2024 -- Present}
-      {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
-      \resumeItemListStart
-        \resumeItem{Performed computational data analysis of high-throughput sequencing data}
-        \resumeItem{Collaborated with other lab members to assist in their research projects, and performed individual research}
-        \resumeItem{Developed programs for RNA analysis, including sequence discovery (motifs/IREs) and structural preference (RNA folding)}
-    \resumeItemListEnd
 
-    \resumeSubheading
-      {Undergraduate Researcher}{June 2023 -- Aug. 2023}
-      {Texas A\&M University}{College Station, TX}
-      \resumeItemListStart
-        \resumeItem{Researched the use of reinforcement learning on autonomous vehicles}
-        \resumeItem{Developed a method of learning in real time in a real-world environment}
-        \resumeItem{Collaborated with graduate students and professor to write a paper and present a poster on my research}
-      \resumeItemListEnd
+\resumeSubHeadingListStart    
 
-  \resumeSubHeadingListEnd
+\resumeSubheading
+  {Undergraduate Research Assistant}{Jan. 2024 -- Present}
+  {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
+  \resumeItemListStart
+    \resumeItem{Performed computational data analysis of high-throughput sequencing data}
+    \resumeItem{Collaborated with other lab members to assist in their research projects, and performed individual research}
+    \resumeItem{Developed programs for RNA analysis, including sequence discovery (motifs/IREs) and structural preference (RNA folding)}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Undergraduate Researcher}{June 2023 -- Aug. 2023}
+  {Texas A\&M University}{College Station, TX}
+  \resumeItemListStart
+    \resumeItem{Researched the use of reinforcement learning on autonomous vehicles}
+    \resumeItem{Developed a method of learning in real time in a real-world environment}
+    \resumeItem{Collaborated with graduate students and professor to write a paper and present a poster on my research}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
@@ -156,22 +157,22 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{KATSS - K-mer Analysis Tools for Sequence and Structure} $|$ \emph{C, CMake, Unix, Bash}}{}
+{\textbf{KATSS - K-mer Analysis Tools for Sequence and Structure} $|$ \emph{C, CMake, RStudio, Unix, Bash}}{}
   \resumeItemListStart
     \resumeItem{Developed a suite of tools for analyzing RNA-binding protein (RBP) interactions using RNA sequence and structure}
-    \resumeItem{Analyzed over 5 proteins, including: RBFOX2, UNK, MSI1 \& MSI2, discovering structural motif preference}
+    \resumeItem{Analyzed over 70 proteins, discovering the de novo sequential and structural motif preference for known and novel RBPs}
     \resumeItem{Created algorithms and pipeline for motif discovery, base-pair probability preference, and sequence clustering}
-    \resumeItem{Implemented efficient data structures to improve performance, being able to analyze 10 million sequences in 5 seconds}
+    \resumeItem{Implemented efficient data structures, being able to analyze 60 million sequences (\textasciitilde 7.5GB) in 5 seconds on an M1 chip}
     \resumeItem{Used CMake to make program cross compatible with Unix/Linux, MacOS, and Windows systems}
   \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Gomoku GUI Application \& AI} $|$ \emph{Java, Swing, JUnit}}{}
+{\textbf{Gomoku GUI Application \& AI} $|$ \emph{Java, Swing, PHP, JUnit}}{}
   \resumeItemListStart
-    \resumeItem{Created GUI application for the Gomoku board game using the Java Swing library}
+    \resumeItem{Created GUI application for the Gomoku board game using the Java Swing library and PHP}
     \resumeItem{Implemented over 70 tests using JUnit, achieving 100\% code coverage across 5 classes and 46 functions}
     \resumeItem{Developed an AI player using a min-max algorithm, determining the best move from searching a depth of 20 moves}
-    \resumeItem{Used multithreading to allow for responsive GUI program, allowing several components to run simultaneously}
+    \resumeItem{Created Gomoku API using PHP to determine computer moves, storing game data efficiently using JSON}
   \resumeItemListEnd
 
 \resumeProjectHeading
@@ -188,7 +189,7 @@
     \resumeItemListStart
         \resumeItem{Developed a program for the detection of specific RNA sequences and structures (IREs) in a given gene}
         \resumeItem{Efficient algorithms for detection, searching through multiple 100MB files (entire human CDS and UTRs) in under 1 minute}
-        \resumeItem{Program works across different genomes, and successfully identified over 300 IREs, including over 10 known IREs}
+        % \resumeItem{Program works across different genomes, and successfully identified over 300 IREs, including over 10 known IREs}
         \resumeItem{Results from this work are being prepared for publication}
     \resumeItemListEnd
 
@@ -207,9 +208,9 @@
 
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, R, Bash, AWK} \\
+        \textbf{Languages}{: Java, Python, C/C++, R, PHP, JavaScript, HTML/CSS, Bash, AWK} \\
         \textbf{Developer Tools}{: Git, Unix/Linux, JUnit, VS Code, PyCharm, IntelliJ} \\
-        \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+        \textbf{Libraries}{: pandas, NumPy, Matplotlib, ggplot2}
     }}
  \end{itemize}
 

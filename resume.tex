@@ -117,12 +117,21 @@
 \section{Education}
 
 \resumeSubHeadingListStart
-    \resumeSubheading{University of Texas at El Paso}{El Paso, TX}{Bachelor of Science in Computer Science, Minor in Mathematics}{Anticipated: December 2025}
-        
-    \resumeItemListStart
-        \resumeItem{Honors \& Awards: Anheuser-Busch Charitable Trust Scholarship, Hispanic Scholarship Fund Scholar, Dean's List}
-    \resumeItemListEnd
+  \resumeSubheading{University of Texas at El Paso}{Anticipated: December 2025}{Bachelor of Science in Computer Science, Minor in Mathematics}{GPA: 3.80}
 \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: Java, Python, C/C++, R, PHP, JavaScript, HTML/CSS, Bash, AWK} \\
+        \textbf{Developer Tools}{: Git, RStudio, CMake, Unix/Linux, JUnit, VS Code, PyCharm, IntelliJ} \\
+        \textbf{Libraries}{: pandas, NumPy, Matplotlib, ggplot2} \\
+        \textbf{Relevant Courses}{: Computer Architecture, Programming Languages, Database Management, Adv. Object Oriented Programming}
+    }}
+ \end{itemize}
 
 
 %-----------EXPERIENCE-----------
@@ -134,18 +143,20 @@
   {Undergraduate Research Assistant}{Jan. 2024 -- Present}
   {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
   \resumeItemListStart
-    \resumeItem{Performed computational data analysis of high-throughput sequencing data}
-    \resumeItem{Collaborated with other lab members to assist in their research projects, and performed individual research}
-    \resumeItem{Developed programs for RNA analysis, including sequence discovery (motifs/IREs) and structural preference (RNA folding)}
+    \resumeItem{Performed computational \textbf{data analysis} of high-throughput sequencing data to aid in genomic research}
+    \resumeItem{Developed \textbf{command-line} programs and \textbf{R packages} for RNA analysis using \textbf{C} and \textbf{RStudio} on \textbf{Linux/Unix} systems}
+    \resumeItem{Researched over 100 RNA-binding proteins, aided 3 publications, and currently working on another 2 publications}
+    \resumeItem{Collaborated with scientists to develop 3 \textbf{statistical tools} using \textbf{python}, \textbf{R}, \textbf{BASH}, and \textbf{AWK} to increase productivity}
   \resumeItemListEnd
 
 \resumeSubheading
   {Undergraduate Researcher}{June 2023 -- Aug. 2023}
   {Texas A\&M University}{College Station, TX}
   \resumeItemListStart
-    \resumeItem{Researched the use of reinforcement learning on autonomous vehicles}
-    \resumeItem{Developed a method of learning in real time in a real-world environment}
-    \resumeItem{Collaborated with graduate students and professor to write a paper and present a poster on my research}
+    \resumeItem{Developed a real-time \textbf{reinforcement learning} model for autonomous vehicle navigation using \textbf{python} and \textbf{pytorch}}
+    \resumeItem{Implemented reduced-information training to boost training efficiency and decision-making in real-world scenarios}
+    \resumeItem{Continuous improvement in model performance over 85 \textbf{training episodes}, with the model's reward increasing steadily}
+    \resumeItem{Collaborated with the professor, undergraduate, and graduate students to write a technical paper and present a resarch poster}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -160,38 +171,29 @@
 {\textbf{KATSS - K-mer Analysis Tools for Sequence and Structure} $|$ \emph{C, CMake, RStudio, Unix, Bash}}{}
   \resumeItemListStart
     \resumeItem{Developed a suite of tools for analyzing RNA-binding protein (RBP) interactions using RNA sequence and structure}
-    \resumeItem{Analyzed over 70 proteins, discovering the de novo sequential and structural motif preference for known and novel RBPs}
-    \resumeItem{Created algorithms and pipeline for motif discovery, base-pair probability preference, and sequence clustering}
-    \resumeItem{Implemented efficient data structures, being able to analyze 60 million sequences (\textasciitilde 7.5GB) in 5 seconds on an M1 chip}
-    \resumeItem{Used CMake to make program cross compatible with Unix/Linux, MacOS, and Windows systems}
+    \resumeItem{Created a high-performance, \textbf{thread-safe library} for parsing fasta/fastq files, achieving \textbf{2x faster performance} than industry-standard libraries by optimizing file handling and \textbf{memory management} in a zlib-compatible \textbf{API}}
+    \resumeItem{Created \textbf{algorithms} and \textbf{pipeline} for motif discovery, base-pair probability preference, and sequence clustering}
+    \resumeItem{Implemented efficient \textbf{data structures}, being able to analyze 60 million sequences (\textasciitilde 7.5GB) in 5 seconds on an M1 chip}
+    \resumeItem{Utilized \textbf{CMake} to configure cross-compatibility for \textbf{Unix/Linux}, \textbf{MacOS}, and \textbf{Windows}, enabling broader accessibility}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Database Management System} $|$ PHP, SQL}{}
+  \resumeItemListStart
+    \resumeItem{Led design of a \textbf{SQL database} for managing student, partner, and opportunity data, ensuring scalability and data integrity}
+    \resumeItem{Created \textbf{ER model} with complex relationships (many-to-many, one-to-many) to implement our student-partner database}
+    \resumeItem{Implemented SQL queries and procedures to enforce constraints and enable efficient, real-time data management}
+    \resumeItem{Developed \textbf{PHP} front end for secure data input, user login, and role-based access to streamline data management}
   \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Gomoku GUI Application \& AI} $|$ \emph{Java, Swing, PHP, JUnit}}{}
   \resumeItemListStart
-    \resumeItem{Created GUI application for the Gomoku board game using the Java Swing library and PHP}
-    \resumeItem{Implemented over 70 tests using JUnit, achieving 100\% code coverage across 5 classes and 46 functions}
-    \resumeItem{Developed an AI player using a min-max algorithm, determining the best move from searching a depth of 20 moves}
-    \resumeItem{Created Gomoku API using PHP to determine computer moves, storing game data efficiently using JSON}
+    \resumeItem{Created \textbf{GUI application} for the Gomoku board game using the \textbf{Java Swing} library and \textbf{PHP}}
+    \resumeItem{Implemented over \textbf{70 unit tests} using \textbf{JUnit}, achieving 100\% code coverage across 5 classes and 46 functions}
+    \resumeItem{Developed an \textbf{AI} player using a min-max algorithm, determining the best move from searching a depth of 20 moves}
+    \resumeItem{Created Gomoku \textbf{API} using \textbf{PHP} to determine computer moves, storing game data efficiently using \textbf{JSON}}
   \resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Autonomous Vehicle Navigation using Real-Time Reinforcement Learning} $|$ \emph{Python, PyTorch}}{}
-    \resumeItemListStart
-        \resumeItem{Developed real-time reinforcement learning (RL) model for autonomous vehicle navigation on a pre-mapped 2D plane}
-        \resumeItem{Implemented reduced-information training to boost training efficiency and decision-making in real-world scenarios}
-        \resumeItem{Continuous improvement in model performance over 85 training episodes, with the reward function increasing steadily}
-        \resumeItem{Authored a paper detailing the project's methodology and results, showcasing the developed RL model}
-    \resumeItemListEnd
-    
-\resumeProjectHeading
-{\textbf{ASPIIRE} $|$ \emph{Linux, Bash, awk, R}}{}
-    \resumeItemListStart
-        \resumeItem{Developed a program for the detection of specific RNA sequences and structures (IREs) in a given gene}
-        \resumeItem{Efficient algorithms for detection, searching through multiple 100MB files (entire human CDS and UTRs) in under 1 minute}
-        % \resumeItem{Program works across different genomes, and successfully identified over 300 IREs, including over 10 known IREs}
-        \resumeItem{Results from this work are being prepared for publication}
-    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -202,17 +204,6 @@
   \small \item \bibentry{Harris2024Understanding}
   \small \item \bibentry{Gosztyla2024Integrated}
 \end{itemize}
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        \textbf{Languages}{: Java, Python, C/C++, R, PHP, JavaScript, HTML/CSS, Bash, AWK} \\
-        \textbf{Developer Tools}{: Git, Unix/Linux, JUnit, VS Code, PyCharm, IntelliJ} \\
-        \textbf{Libraries}{: pandas, NumPy, Matplotlib, ggplot2}
-    }}
- \end{itemize}
 
 
 %-------------------------------------------

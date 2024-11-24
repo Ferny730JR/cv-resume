@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{bookmark}
+\input{glyphtounicode}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+
+%----------FONT OPTIONS----------
+\usepackage{times}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize} \setlength\itemsep{0em}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\nobibliography{publications.bib}
+\bibliographystyle{unsrt}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Francisco Fernando Cavazos} \\ \vspace{1pt}
+  \small 915-330-5169 $|$ 
+  \href{mailto:ffcavazos@miners.utep.edu}{\underline{ffcavazos@miners.utep.edu}} $|$ 
+  \href{https://linkedin.com/in/francisco-cavazos}{\underline{in/francisco-cavazos}} $|$
+  \href{https://github.com/Ferny730JR}{\underline{github.com/Ferny730JR}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {University of Texas at El Paso}
+  {Anticipated: December 2025}
+  {Bachelor of Science in Computer Science, Minor in Mathematics}
+  {GPA: 3.80}
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Languages}{: Java, Python, C/C++, R, PHP, JavaScript, HTML/CSS, SQL, Bash, AWK} \\
+        \textbf{Developer Tools}{: Git, RStudio, CMake, Unix/Linux, JUnit, VS Code, PyCharm,
+                IntelliJ} \\
+        \textbf{Libraries}{: pandas, NumPy, Matplotlib, ggplot2} \\
+        \textbf{Relevant Courses}{: Computer Architecture, Programming Languages, Database
+                Management, Adv. Object Oriented Programming}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart    
+
+\resumeSubheading
+{University of North Carolina at Chapel Hill}
+{Chapel Hill, NC}
+{Laboratory Technician}
+{Jan. 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Performed computational data analysis of high-throughput sequencing data to
+                support multi-omic research projects}
+    \resumeItem{Developed command-line tools and R package for RNA analysis using
+                Python, C, and RStudio on Linux/Unix systems}
+    \resumeItem{Collaborate with laboratory to create statistical tools leveraging Python, R, BASH,
+                and AWK, enhancing productivity}
+    \resumeItem{Contributed to research on over 100 RNA-binding proteins, species-specific k-mer
+                conservation, and iron-regulatory elements, aiding the completion of 2 peer-reviewed
+                publications and contributing to 2 ongoing manuscripts}
+  \resumeItemListEnd
+\resumeSubSubheading
+{Undergraduate Research Assistant}
+{May. 2022 -- Aug. 2022}
+  \resumeItemListStart
+    \resumeItem{Developed scripts for k-mer counting, enrichment analysis, and structure preference
+                for RNA-RBP interactions}
+    \resumeItem{Efficiently scheduled script jobs reducing execution time by utilizing Longleaf
+                high-performance compute cluster}
+    \resumeItem{Presented findings on computational biology projects to over 30 researchers,
+                showcasing approaches to RNA analysis}
+    \resumeItem{Partnered with graduate student researchers to develop and refine data-driven
+                workflows, assisting their research}
+  \resumeItemListEnd
+
+\resumeSubheading
+{Texas A\&M University}
+{College Station, TX}
+{Undergraduate Researcher}
+{June 2023 -- Aug. 2023}
+  \resumeItemListStart
+    \resumeItem{Developed a real-time reinforcement learning model for autonomous vehicle
+                navigation using python and pytorch}
+    \resumeItem{Implemented reduced-information training to boost training efficiency and 
+                decision-making in real-world scenarios}
+    \resumeItem{Continuous improvement in model performance over 85 training episodes, with
+                the model's reward increasing steadily}
+    \resumeItem{Collaborated with the professor, undergraduate, and graduate students to write a 
+                technical paper and present a resarch poster}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{KATSS - K-mer Analysis Tools for Sequence and Structure} $|$ \emph{C, CMake, RStudio, Unix, Bash}}{}
+  \resumeItemListStart
+    \resumeItem{Developed a suite of tools for analyzing RNA-binding protein (RBP) interactions
+                using RNA sequence and structure}
+    \resumeItem{Created a high-performance, thread-safe library for parsing fasta/fastq files, 
+                achieving 2x faster performance than industry-standard libraries by optimizing file
+                handling and memory management in a zlib-compatible API}
+    \resumeItem{Created algorithms and pipeline for motif discovery, base-pair probability
+                preference, and sequence clustering}
+    \resumeItem{Implemented efficient data structures, being able to analyze 60 million sequences
+                (\textasciitilde 7.5GB) in 5 seconds on an M1 chip}
+    \resumeItem{Utilized CMake to configure cross-compatibility for Unix/Linux, MacOS, and Windows,
+                enabling broader accessibility}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Database Management System} $|$ PHP, SQL}{}
+  \resumeItemListStart
+    \resumeItem{Led design of a SQL database for managing student, partner, and opportunity data,
+                ensuring scalability and data integrity}
+    \resumeItem{Created ER model with complex relationships (many-to-many, one-to-many) to implement
+                our student-partner database}
+    \resumeItem{Implemented SQL queries and procedures to enforce constraints and enable efficient,
+                real-time data management}
+    \resumeItem{Developed PHP front end for secure data input, user login, and role-based access to
+                streamline data management}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Gomoku GUI Application \& AI} $|$ \emph{Java, Swing, PHP, JUnit}}{}
+  \resumeItemListStart
+    \resumeItem{Created GUI application for the Gomoku board game using the Java Swing library and
+                PHP}
+    \resumeItem{Implemented over 70 unit tests using JUnit, achieving 100\% code coverage across 5
+                classes and 46 functions}
+    \resumeItem{Developed an AI player using a min-max algorithm, determining the best move from
+                searching a depth of 20 moves}
+    \resumeItem{Created Gomoku API using PHP to determine computer moves, storing game data
+                efficiently using JSON}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-------------
+\section{Publications}
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small \item \bibentry{Harris2024Understanding}
+  \small \item \bibentry{Gosztyla2024Integrated}
+  \small \item \bibentry{Harris2024Dissecting}
+\end{itemize}
+
+%-----------Leadership-------------
+\section{Leadership}
+
+\resumeSubHeadingListStart
+\resumeSubheading{CAHSI Advocate}{Sep. 2024 -- Present}
+  {University of Texas at El Paso}{El Paso, TX}
+  \resumeItemListStart
+    \resumeItem{Facilitated community-building among Hispanic students in computing by organizing 
+                and promoting CAHSI initiatives, effectively increasing awareness and engagement in
+                inclusive academic and career opportunities.}
+    \resumeItem{Connected peers with valuable resources by sharing CAHSI practices and events 
+                through workshops, social media, and email campaigns, fostering a supportive 
+                academic environment and enhancing student retention}
+    \resumeItem{Collaborated with campus organizations to co-host events that highlighted
+                professional development, mentorship, and academic success strategies, strengthening
+                cross-campus networks}
+    \resumeItem{Participated in bi-weekly regional and national virtual meetings, contributing ideas
+                for effective student engagement strategies and to enhance leadership skills}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------Volunteer-------------
+\section{Honors \& Awards}
+
+\begin{itemize}[leftmargin=0.15in,label={}]
+  \small \item{\makebox[0.5in][l]{2024}Dean's List Spring 2024 \\
+               \makebox[0.5in][l]{2023}Anheuser-Busch Charitable Trust Fund Scholarship \\
+               \makebox[0.5in][l]{2023}Dean's List Fall 2023 \\
+               \makebox[0.5in][l]{2023}Dean's List Spring 2023 \\
+               \makebox[0.5in][l]{2022}Dean's List Fall 2022}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
